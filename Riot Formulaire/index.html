@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma page Web</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/7d63b37e61.js" crossorigin="anonymous"></script>
+    <script src="./js/formulaire.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+    </style>
+</head>
+
+<body>
+    <div id="navigation">
+
+    </div>
+
+    <div id="hautdepage">
+        <!-- LOGO LEAGUE OF LEGENDS + ILLUSTRATION-->
+        <p><img src="./images/logo.png" width="140" /></p>
+    </div>
+
+    <div id="contenu">
+        <div id="bloc1">
+            <div class="lien_haut_de_page">
+                <ul>
+                    <li class="lien_haut">Support League of Legends</li>
+                    <li class="lien_haut">Récupération, sécurité & données des comptes</li>
+                    <li class="lien_haut">FAQ sur la récupération, les données et l'effacement de compte</li>
+                </ul>              
+
+
+                <form>
+                    <input class="searchbar" type="search" placeholder="RECHERCHE">
+                </form>
+            </div>
+
+            <h1>Récupérer votre compte</h1>
+
+            <div id="carton1">
+                <div id="c1element1">
+                    <img src="./images/beemo.png" />
+                    <p>TryToFindMeNow</p>
+                    <p>7 octobre 2021 18:00</p>
+                </div>
+                <div id="c1element2">
+                    <a href="https://facebook.fr"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/?lang=fr"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.reddit.com/"><i class="fa-brands fa-reddit-alien"></i></a>
+                    <i class="fa-solid fa-link"></i>
+                </div>
+
+                <hr>
+                <aside>
+                    <select>
+                        <option value="">Que signifie "Récupérer" mon compte ?</option>
+                        <option value="">Envoyer une demande de récupération de compte</option>
+                    </select>
+
+                </aside>
+
+                <h2>QUE SIGNIFIE « RÉCUPÉRER » MON COMPTE ? </h2>
+                <p>Pour en apprendre davantage sur la récupération du compte et trouver des réponses aux questions les
+                    plus fréquentes, visitez <a href="">Récupération de compte : guide et pas-à-pas.</a></p>
+
+                <h2>ENVOYER UNE DEMANDE DE RÉCUPÉRATION DE COMPTE</h2>
+                <p>Vous voulez récupérer votre compte Riot ou League of Legends ? Eh bien, nous voulons vous revoir en
+                    jeu dès que possible ! Utilisez le formulaire ci-dessous pour récupérer votre compte.</a></p>
+
+                <blockquote>
+                    <h3>MAIS ATTENDEZ !</h3>
+                    <p>Avant d'envoyer une demande, essayez donc ces étapes :</p>
+                    <ol>
+                        <li>Assurez-vous que vous avez un compte et que vous essayez de vous connecter au <a href="">bon
+                                serveur.</a></li>
+                        <li><a href="">Récupérez votre nom d'utilisateur</a> via l'adresse e-mail associée à votre
+                            compte.</li>
+                        <li><a href="">Récupérez votre mot de passe</a> en saisissant votre nom d'utilisateur (pas votre
+                            nom d'invocateur).</li>
+                    </ol>
+                </blockquote>
+
+                <p>Si vous avez suivi ces instructions et ne pouvez toujours pas récupérer votre compte, veuillez suivre
+                    cette procédure :</p>
+
+                <form id="formulaire">
+                    <h2>INFORMATIONS DU COMPTE</h2>
+
+                    <label for="utilisateur">Nom d'utilisateur :</label><br>
+                    <input id="utilisateur" name="utilisateur" type="text" placeholder="Nom d'utilisateur" /><br>
+
+                    <label for="region_select">Région :</label><br>
+                    <select name="region" id="region_select">
+                        <option value="Europe - Nord & Est">Europe - Nord & Est</option>
+                        <option value="Brésil">Brésil</option>
+                        <option value="Europe - Ouest">Europe - Ouest</option>
+                        <option value="Amérique Latine Nord">Amérique Latine Nord</option>
+                        <option value="Amérique Latine Sud">Amérique Latine Sud</option>
+                        <option value="Amérique du Nord">Amérique du Nord</option>
+                        <option value="Océanie">Océanie</option>
+                        <option value="Russie">Russie</option>
+                        <option value="Turquie">Turquie</option>
+                        <option value="Japon">Japon</option>
+                    </select>
+
+                    <p><a href="">Nom d'utilisateur oublié ??</a> <a href="">Mot de passe oublié ??</a> Cliquez pour
+                        récupérer.</p>
+
+                    <h2>INFORMATIONS D'INSCRIPTION</h2>
+
+                    <label for="email">E-mail d'inscription :</label><br>
+                    <input id="email" name="email" type="email" placeholder="E-mail d'inscription" /><br>
+
+                    <label for="acces">Avez-vous accès à cet e-mail ? :</label><br>
+                    <select name="acces" id="acces">
+                        <option value="NON">NON</option>
+                        <option value="OUI">OUI</option>
+                    </select><br>
+
+                    <label for="recuperationEmail">Récupérer via l'adresse e-mail :</label><br>
+                    <input id="recuperationEmail" name="recuperationEmail" type="email"
+                        placeholder="Récupérer via e-mail" /><br>
+
+                    <h2>E-MAIL CONNU LE PLUS ANCIEN (HORS CELUI D'INSCRIPTION)</h2>
+                    <label for="ancienEmail">Le cas échéant, quel est l'e-mail le plus ancien (hors celui d'inscription)
+                        utilisé avec ce compte dont vous vous souvenez ?:</label><br>
+                    <input id="ancienEmail" name="ancienEmail" type="email"
+                        placeholder="E-mail connu le plus ancien" /><br>
+
+                    <label for="acces2">Avez-vous accès à cet e-mail ? :</label><br>
+                    <select name="acces2" id="acces2">
+                        <option value="NON">NON</option>
+                        <option value="OUI">OUI</option>
+                    </select><br>
+
+                    <p class="rouge">Vous devez vous souvenir de votre e-mail d'inscription ou avoir accès à une adresse
+                        e-mail précédemment utilisée pour récupérer votre compte. Si ce n'est pas le cas, veuillez
+                        envoyer un ticket au support pour récupérer ce compte.
+                    <p>
+
+                        <button class="bouton" type="submit">RECUPERER</button>
+                </form>
+
+                <hr>
+                <p>Cet article vous a-t-il été utile ?<i class="fa-solid fa-thumbs-up hover"></i><i
+                        class="fa-solid fa-thumbs-down hover"></i></p>
+            </div>
+        </div>
+        <div id="bloc2">
+            <h1>Vous ne trouvez pas ce que vous recherchez ?</h1>
+            <p>Quel que soit le souci, nous sommes là pour vous aider ! Envoyez une requête ! À moins qu'elle tombe dans
+                un portail, nous y répondrons très vite.</p>
+            <button class="bouton">ENVOYER UNE REQUETE AU SUPPORT</button>
+        </div>
+    </div>
+
+    <div id="pieddepage">
+        <div class="result">
+            <h1>Données</h1>
+            <pre class="sortie"></pre>
+        </div>
+</body>
+
+</html>

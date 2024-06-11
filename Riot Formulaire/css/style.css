@@ -1,0 +1,84 @@
+*
+    {
+    padding:0;
+    margin:0;    
+    font-family: 'Rubik', sans-serif;   
+    font-weight: 400; 
+    }  
+
+/* TYPOGRAPHIE */
+a
+    {
+    color:rgb(228, 55, 60);
+    }
+
+/* HAUT DE PAGE*/
+#hautdepage
+    {
+    background-image: url("../images/banniere.jpg");
+    background-position: center;
+    height:158px;
+    width: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .lien_haut_de_page
+    {
+        display: flex;
+        margin-top: 2em;
+    }
+
+   ul
+   {
+    display: flex;
+    list-style-type: none;
+    font-size: small;       
+   }
+
+   .lien_haut
+   {    
+    margin-right: 1em;
+    word-wrap: break-word;
+   }
+
+   .searchbar
+   {
+    padding: 0.7em;
+   }
+
+   .carton1
+   {
+    display: flex;
+   }
+
+   blockquote
+   {
+    background-color: rgb(227, 244, 249);
+    border-left: 2px solid rgb(91, 192, 224);
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: 28.800px;
+    margin-bottom: 28.800px;
+    padding: 20px 28.800px 20px 28.800px;
+   }
+
+   ol
+   {
+    color: rgb(228, 55, 60) ;
+   }
+
+   h3
+   {
+    color: rgb(91, 192, 224);
+   }
+
+ 
+
+
+
+   
+
